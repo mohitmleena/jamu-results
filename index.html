@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMAU Kota</title>
+    <link rel="stylesheet" href="sttyles.css">
+</head>
+<body>
+    <header>
+        <h1>JMAU STUDENTS RESULT</h1>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+                <li><img src="pImage_0812055c-b43a-4af2-b06f-da38c22c52fd_1702534156.png" alt="JMAU Logo" class="header-logo"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="3d-container"></div>
+        <section id="student-results">
+            <h2>Student Results</h2>
+            <form id="result-form">
+                <label for="roll-number">Enter Roll Number:</label>
+                <input type="text" id="roll-number" name="roll-number" required>
+                <button type="submit">Show Result</button>
+            </form>
+            <div id="result-display"></div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
